@@ -1,0 +1,487 @@
+body{
+  margin:0;
+  padding: 0;
+}
+
+header{
+      top: 0;
+      background-color:black;
+      width:100%;
+      position: fixed;
+      border-bottom:1px  solid rgb(133,133,133) ;
+      margin-right: 0;
+}
+.top{
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 64px;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+} 
+.top-top{
+  display: flex;
+  flex-direction: row;
+}
+.top img{
+  height: 24px;
+  width: 84px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+div .top-main{
+  font-size:16px;
+  line-height:28px;
+}       
+.top-main ul{
+  display: flex;
+  flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+     }
+
+
+/*下拉部分*/
+.top-main ul a{
+  text-decoration: none;
+}
+.top-main ul li{
+    display:inline;
+    padding: 8px;
+}
+.a1 {
+    position: relative;
+    display: inline-block;
+    
+  }    
+.content { 
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 250px;
+    box-shadow: 0 0 15px #4E4E4E;
+    padding:10px;
+    padding: 12px 16px;
+    outline:1px  solid rgb(178, 178, 178);
+    border-radius: 5px;
+    z-index:999;
+  } 
+/*下拉菜单文字部分*/
+.a1:hover .content {
+    display: block;
+  }
+.a1 li:hover{
+  background-color: royalblue;
+  border-radius: 6px;
+}
+.content .one:hover{
+  background-color: rgb(53, 53, 54);
+  border-radius: 5px;
+}
+.content h4{
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.content p{
+  font-size: 12px;
+  margin: 2px;
+}
+.top-main ul a{
+    color:white ;
+    border-radius:5px;
+}
+/*顶部搜索栏*/
+.top-seek img{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 2px;
+  left:140px;
+  cursor: pointer;
+}
+.seek1{position: relative;
+       }
+.top-seek form input[type=text] {
+  background-color: rgba(1, 1, 1, 0.5);
+  border-radius: 20px;
+}
+
+
+.head{background-color: black;}
+
+/*上面黑色部分*/
+.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    height: 450px
+     
+}
+section{margin: 0 auto;
+        padding: 0 16px;
+        background: url(images-mdn/1.jpg);
+        background-repeat: no-repeat;
+}
+h1{
+  margin: 0 auto;
+  font-size: 48px;
+  color: white;
+  font-weight: normal;
+}
+section p{
+  color: white;
+  margin: 45px 0;
+}
+.mid u{
+   text-decoration-color: cornflowerblue;
+}
+.head-seek{
+    display: flex;
+    align-self: center;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 66px;
+}
+.head-seek form{
+  font-size: 17px;
+  width: 622px;
+  text-decoration: none;
+}
+.head-seek form input[type=text] {
+  width: 550px;
+  border-radius: 10rem;
+  background-color: rgba(1, 1, 1, 0.5);
+  padding: 2rem;
+  border-color: rgb(178, 178, 178);
+}
+.seek-button{
+  left: 540px;
+  width: 24px;
+  background-color: rgba(1,1,1,0.5);
+  display: block;
+  position: absolute;
+}
+.seek-button img{
+  width: 16px;
+  height: 16px;
+  z-index: 998;
+  position: absolute;
+  left:560px ;
+  bottom:39px;
+  cursor: pointer;
+}
+.head-seek-style{
+  width: 100%;
+  border-radius: 10rem;
+  background-color: rgba(1, 1, 1, 0.5);
+  padding: 32px;
+}
+
+/*卡片布局*/
+div .element{
+    padding: 16px;
+    margin:10px; 
+    width:40%;
+    outline-style: solid;
+    outline-color:rgb(187, 176, 176); 
+    border-radius: 10px;
+   
+}
+.flex{
+     width: 830px;
+     padding-left: 16px;
+     padding-right: 16px;
+     margin: 0 auto;
+}
+.flex h2{
+  font-size: 23px;
+  font-weight: normal;
+}
+.flex h5{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(27,27,27);
+  margin: 0;
+  cursor: pointer;
+}
+.flex h6{
+  margin-top: 0;
+  font-size: 20px;
+  color: rgb(27,27,27);
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.flex p{
+  font-weight: 400;
+  line-height: 19px;
+  color: rgb(27,27,27);
+}
+.card{
+    display: flex;
+    flex-direction:wrap;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.element:hover{
+  box-shadow: 0 0 15px #979494;
+}
+.flex  h5:hover,.flex h6:hover{
+  text-decoration:underline;
+}
+
+/*列表*/
+.news h2,.recent h2{
+  margin-top: 36px;
+  margin-bottom:16px ;
+  font-size: 23px;
+  font-weight: normal;
+}
+.news ul,.recent ul{
+  padding: 0;
+}
+.news,.recent{
+  color: rgb(27,27,27);
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+#x{
+background-color: rgba(231, 226, 226, 0.562);
+}
+#y{
+  background-color: rgba(247, 246, 246, 0.767);
+}
+.news-part,.recent-part{
+  padding: 0px;
+  border-radius: 4px; 
+  display: flex;
+  justify-content: space-between;
+  }
+.news-part p,.recent-part p{
+  width:370px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  color: rgb(27, 27, 27);
+  
+}
+.news-part span a,.recent-part span a{
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+}
+.news-date,.recent-date{
+  width: 120;
+  font-size: 12px;
+  padding-top: 30px;
+} 
+
+
+/*底部*/
+.bottle{
+  padding: 30px;
+  background-color:black;
+}
+.bottle-content h3{
+  margin: 32px 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+.bottle-content .min-text{
+  text-decoration: none;
+  padding: 4px;
+  background-color: white;
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+.bottle-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+
+}
+blockquote{
+  width: 500px;
+  margin: 32px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 28px;
+  color: rgb(205, 205, 205);
+}
+.bottle-content a{
+  text-decoration: none;
+  color:rgb(140,180,255);
+
+}
+figure img{
+   width:230px;
+   height: 150px;
+   
+ }
+ .bottle-content{
+  width: 512px;
+  background: url(images-mdn/1.jpg);
+  background-repeat: no-repeat;
+}
+
+footer{
+  padding: 16px 32px;
+}
+.last{
+  margin: 0 110px;
+}
+.last-one{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.last-logo img{
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+}
+.last-logo p{
+  line-height: 28px;
+  color:rgb(78, 78, 78);
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+.last-logo a{
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+  font-size: 20px;
+}
+.last-list li{
+  font-size: 12px;
+  line-height: 28px;
+  color: rgb(78, 78, 78);
+}
+.last h2{
+  padding-left: 40px;
+  font-weight: normal;
+  color:rgb(78, 78, 78);
+} 
+
+.last-moz{
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 24px;
+  height: 32px;
+}
+.last-moz span{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color:white;
+  background-color: rgb(78, 78, 78);
+  cursor: pointer;
+}
+.last-moz ul li{
+  display: inline;
+  padding: 8px;
+}
+.last-text,.last-moz ul li{
+  color: rgb(78, 78, 78);
+  font-size: 12px;
+  line-height: 21px;
+}
+.last-two u{
+  cursor: pointer;
+}
+
+ul{
+list-style: none;}
+
+/*响应式布局*/
+@media screen and (max-width: 850px) {
+
+
+.top img{
+  float: left;
+}
+ .top-seek{display: none;} 
+div .top-main{
+  margin-right:400px;
+}
+
+div.a1{
+    display: none;}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-left:10px;
+    width: 830px;
+    }
+.element{
+    max-width: 700px;
+}
+
+.news,.recent{
+  display:flex;
+  flex-direction: column;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.bottle-main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.last-one{display: flex;
+          flex-wrap: wrap;
+          column-count: 2; 
+          column-gap: 10px;         
+}
+.last-list{
+  width: 45%;
+}
+.last-list ul{
+  padding: 0;
+}
+.last-list h2{
+  font-size: 13px;
+  padding: 0;
+}
+.last-logo{
+  margin-right: 400px;
+}
+
+.last-moz{display: flex;
+            flex-wrap: wrap;
+            column-count:1;
+  }
+.last-moz ul{
+    padding: 0;
+  }
+.last-text{
+    margin-top:100px ;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .head-seek form input[type=text] {
+    width: 400px;}
+}
+
+
