@@ -1,0 +1,636 @@
+body{
+  margin:0;
+  padding: 0;
+}
+
+.all{
+  overflow: hidden;
+}
+
+header{
+      top: 0;
+      background-color:black;
+      width:100%;
+      position: sticky;
+      border-bottom:1px  solid rgb(133,133,133) ;
+      margin-right: 0;
+}
+.top{
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 64px;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+} 
+.top-top{
+  display: flex;
+  flex-direction: row;
+}
+.top img{
+  height: 24px;
+  width: 84px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+div .top-main{
+  font-size:16px;
+  line-height:28px;
+}       
+.top-main ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+ }
+
+
+/*下拉部分*/
+.top-main ul a{
+  text-decoration: none;
+}
+.top-main ul li{
+    display:inline;
+    padding: 8px;
+}
+.a1 {
+    position: relative;
+    display: inline-block;
+    
+  }    
+.content { 
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 250px;
+    box-shadow: 0 0 15px #4E4E4E;
+    padding:10px;
+    padding: 12px 16px;
+    outline:1px  solid rgb(178, 178, 178);
+    border-radius: 5px;
+    z-index:999;
+  } 
+/*下拉菜单文字部分*/
+.a1:hover .content {
+    display: block;
+  }
+.a1 li:hover{
+  background-color: royalblue;
+  border-radius: 6px;
+}
+.content .one:hover{
+  background-color: rgb(53, 53, 54);
+  border-radius: 5px;
+}
+.content h4{
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.content p{
+  font-size: 12px;
+  margin: 2px;
+}
+.top-main ul a{
+    color:white ;
+    border-radius:5px;
+}
+/*顶部搜索栏*/
+
+.top-seek{
+  height: 40%;
+}
+
+.seek1{
+  height: 55%;
+}
+
+.top-seek form input{
+  background-color: rgba(1, 1, 1, 0.5);
+  border-radius: 20px;
+
+}
+
+.top-seek-button{
+  height: 90%;
+  background: url(images-mdn/seek.png);
+  background-size:contain;
+  border-style: none;
+  position: relative;
+  left: -15%;
+  top: 2%;
+}
+
+.head{background-color: black;}
+
+/*上面黑色部分*/
+.mid{
+  background-color: black;
+}
+section{
+      display: flex;
+      width: 40%;
+      margin: 0 auto;
+      flex-direction: column;
+      color: white;
+      background: url(images-mdn/1.jpg);
+      background-repeat: no-repeat;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.mid u{
+   text-decoration-color: cornflowerblue;
+}
+.head-seek{
+    display: flex;
+    align-self: center;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 66px;
+    padding: 5% 0;
+}
+.head-seek form{
+  font-size: 17px;
+  width: 622px;
+  text-decoration: none;
+}
+.head-seek form input{
+  width:80%;
+  border-radius: 10rem;
+  background-color: rgba(1, 1, 1, 0.5);
+  padding: 2rem;
+  border-color: rgb(178, 178, 178);
+}
+.seek-button{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left:-10%;
+  top: 15%;
+  background: url(images-mdn/seek.png);
+  background-size:contain;
+  border-style: none;
+}
+
+.head-seek-style{
+  width: 100%;
+  border-radius: 10rem;
+  background-color: rgba(1, 1, 1, 0.5);
+  padding: 32px;
+}
+
+/*卡片布局*/
+div .element{
+    padding:16px ;
+    width:40%;
+    border: 1px solid;
+    border-color:rgb(187, 176, 176); 
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.flex{
+     width: 55%;
+     padding-left: 16px;
+     padding-right: 16px;
+     margin: 0 auto;
+}
+.flex h2{
+  font-size: 23px;
+  font-weight: normal;
+  position: relative;
+  left: 3%;
+}
+.flex h5{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(27,27,27);
+  margin: 0;
+  cursor: pointer;
+}
+.flex h6{
+  margin-top: 0;
+  font-size: 20px;
+  color: rgb(27,27,27);
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.flex p{
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(27,27,27);
+}
+
+.card1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.element:hover{
+  box-shadow: 0 0 15px #979494;
+  border-radius: 20px;
+  
+}
+.flex  h5:hover,.flex h6:hover{
+  text-decoration:underline;
+}
+
+/*列表*/
+.news h2,.recent h2{
+  margin-top: 36px;
+  margin-bottom:16px ;
+  font-size: 23px;
+  font-weight: normal;
+}
+.news ul,.recent ul{
+  padding: 0;
+}
+.news,.recent{
+  color: rgb(27,27,27);
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+#x{
+background-color: rgba(231, 226, 226, 0.562);
+}
+#y{
+  background-color: rgba(247, 246, 246, 0.767);
+}
+.news-part,.recent-part{
+  padding:0 1%;
+  border-radius: 4px; 
+  display: flex;
+  justify-content:space-between;
+  }
+.news-part p,.recent-part p{
+  width:370px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  color: rgb(27, 27, 27);
+  
+}
+.news-part span a,.recent-part span a{
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+}
+.news-date,.recent-date{
+  width: 120;
+  font-size: 12px;
+  padding-top: 30px;
+} 
+
+
+/*底部*/
+.bottle{
+  padding-bottom: 5%;
+  background-color:black;
+}
+.bottle-content h3{
+  margin: 32px 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+.bottle-content .min-text{
+  text-decoration: none;
+  padding: 4px;
+  background-color: white;
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+.bottle-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+}
+blockquote{
+  width: 100%;
+  margin: 32px;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 28px;
+  color: rgb(205, 205, 205);
+}
+.bottle-content a{
+  text-decoration: none;
+  color:rgb(140,180,255);
+
+}
+figure img{
+   width:230px;
+   height: 150px;
+   
+ }
+ .bottle-content{
+  width: 35%;
+  background: url(images-mdn/1.jpg);
+  background-repeat: no-repeat;
+}
+
+footer{
+  padding: 16px 32px;
+}
+.last{
+  margin: 0 110px;
+}
+.last-one{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.last-logo img{
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+}
+.last-logo p{
+  line-height: 28px;
+  color:rgb(78, 78, 78);
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.last-list-all{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 60%;
+}
+
+
+.last-logo a{
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(78, 78, 78);
+  font-size: 20px;
+}
+
+
+.last-list ul{
+  padding: 0;
+}
+
+.last-list{
+  width: 60%;
+}
+
+.last-list li{
+  font-size: 12px;
+  line-height: 28px;
+  color: rgb(78, 78, 78);
+}
+.last h2{
+  font-size: 15px;
+  margin-bottom: 0;
+  font-weight: normal;
+  color:rgb(78, 78, 78);
+} 
+
+.last-moz{
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 24px;
+  height: 32px;
+}
+.last-moz span{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color:white;
+  background-color: rgb(78, 78, 78);
+  cursor: pointer;
+}
+.last-moz ul li{
+  display: inline;
+  padding: 8px;
+}
+.last-text,.last-moz ul li{
+  color: rgb(78, 78, 78);
+  font-size: 12px;
+  line-height: 21px;
+}
+.last-two u{
+  cursor: pointer;
+}
+
+ul{
+list-style: none;}
+
+@media screen and (min-width:426px) and (max-width:768px){
+  .top-main{
+    display: none;
+  }
+
+  section{
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  .head-seek{
+    margin-left:10% ;
+  }
+
+  .flex{
+    width: 90%;
+    padding-left:0;
+ }
+
+  .card1{
+    display:table;
+  }
+
+  div .element{
+    width: 100%;
+  }
+
+  .recent,.news{
+    width: 90%;
+  }
+
+  .recent-part{
+   display: table;
+   width: 100%;
+  }
+
+  .recent li p{
+    margin-bottom: 0;
+  }
+  .bottle{
+    margin: 0;
+  }
+
+  .bottle-content{
+    width: 100%;
+    margin: 0;
+    
+  }
+
+  .bottle-content blockquote{
+    width: 90%;
+  }
+
+  .bottle-main{
+    display: table;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  div .last-one{
+    display: table;
+    width: 100%;
+  }
+
+  div .last-list-all{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .last-list{
+    width: 50%;
+  }
+
+  div .last{
+    width: 100%;
+    margin: 0;
+  }
+
+  div .last ul,.last h2{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width:426px) {
+  .top-main{
+    display: none;
+  }
+
+  .top-seek{
+    display: none;
+  }
+
+  section{
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  .head-seek{
+    margin-left:0 ;
+  }
+
+  .head-seek button{
+    left:80%;
+    top:-80%;
+  }
+
+  .flex{
+    width: 90%;
+ }
+
+  .card1{
+    display:table;
+    margin-right: 10%;
+  }
+
+  div .element{
+    width: 100%;
+  }
+
+  .recent,.news{
+    width: 90%;
+  }
+
+  .recent-part{
+   display: table;
+   width: 100%;
+  }
+
+  .recent li p{
+    margin-bottom: 0;
+  }
+  .bottle{
+    margin: 0;
+  }
+
+  .bottle-content{
+    width: 100%;
+    margin: 0;
+    
+  }
+
+  .bottle-content blockquote{
+    width: 90%;
+  }
+
+  .bottle-main{
+    display: table;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  div .last-one{
+    display: table;
+    width: 100%;
+  }
+
+  div .last-list-all{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+
+  }
+
+  .last-list{
+    width: 50%;
+  }
+
+  div .last{
+    width: 100%;
+    margin: 0;
+  }
+
+  div .last ul,.last h2{
+    padding: 0;
+  }
+div .last-moz,.last-two{
+  display: flex;
+  flex-direction: column;
+}
+
+.last-moz{
+  height: 50%;
+  margin-bottom: 0;
+}
+
+.last-moz span{
+  position: relative;
+  left:-34%;
+}
+ 
+}
